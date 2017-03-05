@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+
+    tools:context="com.example.subbu.databasetodo.MainActivity2">
+
+
+    <TextView
+        android:text="SET REMINDER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/name" />
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:hint="Date"
+        android:ems="10"
+
+        android:id="@+id/date_txt" />
+
+    <Button
+        android:text="pick date"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/date"
+        android:background="#80cbc4"
+        android:textColor="#ffffff"
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:hint="Time"
+        android:ems="10"
+
+        android:id="@+id/time_txt" />
+
+    <Button
+        android:text="pick time"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="#80cbc4"
+        android:textColor="#ffffff"
+        android:id="@+id/time"
+
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:hint="Amount"
+            android:ems="10"
+
+            android:id="@+id/cash_txt" />
+
+        <Button
+            android:text="add expense"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/cash"
+            android:background="#80cbc4"
+            android:textColor="#ffffff"
+            android:onClick="time"/>
+    </LinearLayout>
+
+    <Button
+        android:text="submit"
+        android:layout_width="180dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/submit"
+        android:background="#80cbc4"
+        android:textColor="#ffffff"
+        android:onClick="submit"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:id="@+id/txt"
+        android:text="Reminder not set !"
+        android:textColor="#000000"
+
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>
